@@ -1,0 +1,13 @@
+<div class="col-md-7">
+    <div class="form-group m-2">
+        <label for="taskName" class="display-4">Task</label>
+        <hr>
+        <input type="text" [(ngModel)]="newTask" class="form-control">
+    </div>
+    <div class="form-group m-2">
+        <label for="taskDescription" class="display-4">Description</label>
+        <hr>
+        <input type="textarea" [(ngModel)]="newDesc" class="form-control">
+    </div>
+    <button class="btn btn-success m-2"  (click)="newTaskCreated()">Create</button>
+</div>
